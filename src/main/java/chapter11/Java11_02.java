@@ -6,7 +6,7 @@ import java.util.Stack;
 import java.util.TreeSet;
 
 //다음 코드의 실행결과를 적으시오.
-public class Java11_02 {
+public class JAVA11_02{
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
         list.add(3);

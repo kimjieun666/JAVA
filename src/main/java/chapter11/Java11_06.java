@@ -51,7 +51,7 @@ class Student3 implements Comparable {
     }
 }
 
-public class Java11_06 {
+public class JAVA11_06 {
     static int getGroupCount(TreeSet<Student3> tset, int from, int to) {
         Student3 s1 = new Student3("",0,0,from,from,from);
         Student3 s2 = new Student3("",0,0,to,to,to);

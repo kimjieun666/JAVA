@@ -56,7 +56,7 @@ class ClassTotalComparator implements Comparator<Student6> {
     }
 }
 
-public class Java11_09 {
+public class JAVA11_09 {
 
     // 전교등수 계산: 총점 내림차순 정렬 후 동점자는 같은 등수
     public static void calculateSchoolRank(List<Student6> list) {

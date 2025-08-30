@@ -43,7 +43,7 @@ import java.util.Iterator;
             }
         }
     }
-class Java11_05 {
+class JAVA11_05 {
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
         list.add(new Student1("홍길동", 1, 1, 100, 100, 100));

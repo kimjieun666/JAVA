@@ -3,7 +3,7 @@ package chapter11;
 //HashMap에 등급과 점수를 저장하는 registerJokbo()와 게임참가자의 점수를 계산해서 반환하는
 //getPoint()를 완성하시오.
 import java.util.*;
-public class Java11_12 {
+public class JAVA11_12 {
     public static void main(String args[]) throws Exception {
         SutdaDeck deck = new SutdaDeck();
         deck.shuffle();

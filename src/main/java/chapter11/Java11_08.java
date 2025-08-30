@@ -52,7 +52,7 @@ class Student5 implements Comparable {
         return name + "," + ban + "," + no + "," + kor + "," + eng + "," + math + "," + getTotal() + "," + getAverage() + "," + schoolRank; //새로추가
     }
 }
-public class Java11_08 {
+public class JAVA11_08 {
     public static void calculateSchoolRank(List list) {
         Collections.sort(list);
 

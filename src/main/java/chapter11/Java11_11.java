@@ -28,7 +28,7 @@ class SutdaCard {
         return toString().hashCode(); // String클래스의 hashCode()를 호출한다.
     }
 }
-public class Java11_11 {
+public class JAVA11_11 {
     public static void main(String[] args) {
         SutdaCard1 c1 = new SutdaCard1(3,true);
         SutdaCard1 c2 = new SutdaCard1(3,true);

@@ -6,7 +6,7 @@ import java.util.TreeMap;
 //다음 코드는 문제 11-12를 발전시킨 것으로 각 player들의 점수를 계산하고 점수가 제일 높은 사람을 출력하는 코드이다.
 //TreeMap의 정렬기준을 점수가 제일 높은 사람부터 내림차순이 되도록 아래의 코드를 완성하시오.
 //단, 동점자 처리는 하지 않는다.
-public class Java11_13 {
+public class JAVA11_13 {
     public static void main(String[] args) throws Exception {
         SutdaDeck deck = new SutdaDeck();
 

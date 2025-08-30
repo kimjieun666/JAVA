@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 //다음은 정수집합 1,2,3,4와 3,4,5,6의 교집합, 차집합, 합집합을 구하는 코드이다.
 //코드를 완성하여 실행결과와 같은 결과를 출력하시오.
-public class Java11_01 {
+public class JAVA11_01 {
     public static void main(String[] args) {
         ArrayList list1 = new ArrayList();
         ArrayList list2 = new ArrayList();

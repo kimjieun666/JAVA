@@ -58,7 +58,7 @@ class BanNoAscending implements Comparator {
         return -1;
     }
 }
-public class Java11_07 {
+public class JAVA11_07 {
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
         list.add(new Student1("홍길동", 1, 1, 100, 100, 100));

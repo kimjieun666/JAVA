@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 //다음은 성적처리 프로그램의 일부이다.
 //scanner클래스를 이용해서 화면으로부터 데이터를 입력하고 보여주는 기능을 완성하시오.
-public class Java11_14 {
+public class JAVA11_14 {
     static ArrayList record = new ArrayList();//성적데이터를 저장할 공간
     static Scanner s = new Scanner(System.in);
 
@@ -48,7 +48,7 @@ public class Java11_14 {
                     throw new Exception();
                 }
             } catch (Exception e) {
-                System.out.print("메뉴를 잘못 선택하셨습니다. 다시 입력해요.");
+                System.out.print("메뉴를 잘못 선택하셨습니다. 다시 일력해.");
                 System.out.print("원하는 메뉴를 선택하세요(1~3).");
             }
         } while (true);
@@ -65,12 +65,13 @@ public class Java11_14 {
                 try {
                     String input = s.nextLine().trim();
 
-                    if (input.equalsIgnoreCase("q")) {
-                        return;
-                    } else {
+                    if (!input.equals("q")) { //스캐너를 이용해서 화면으로 부터 데이터 입력
                         Scanner s2 = new Scanner(input).useDelimiter(",");//입력받은 값으로 학생 인스턴스 생성 record에 추가
-                        record.add(new Student(s2.next(), s2.nextInt(), s2.nextInt(), s2.nextInt(), s2.nextInt(), s2.nextInt()));                        System.out.println("입력이 완료되었습니다. 입력을 마치려면 q를 입력하세요.");
+                        record.add(new Student1(s2.next(), s2.nextInt(), s2.nextInt(), s2.nextInt(), s2.nextInt(), s2.nextInt()));
+                        System.out.println("입력이 완료되었습니다. 입력을 마치려면 q를 입력하세요.");
+                    } else {
                         //입력받은 값이 q또는 Q이면 메서드 종료
+                        return;
                     }
                 }catch (Exception e){
                         //입력받은 데이터에서 예외 발생시 입력 오류 메세지 보여주고 다시 입력
@@ -93,7 +94,8 @@ public class Java11_14 {
 
                     System.out.println("==============================================");
                     for (int i = 0; i < lengh; i++) {
-                        Student student1 = (Student) record.get(i);                        System.out.println(student1);
+                        Student1 student1 = (Student1) record.get(i);
+                        System.out.println(student1);
                         koreanTotal += student1.kor;
                         englishTotal += student1.eng;
                         mathTotal += student1.math;
@@ -143,8 +145,8 @@ public class Java11_14 {
         }
 
         public int compareTo (Object o){
-            if (o instanceof Student) {
-                Student tmp = (Student)  o;
+            if(o instanceof Student1){
+                Student1 tmp = (Student1)  o;
                 return tmp.total - this.total;
             } else {
                 return -1;
